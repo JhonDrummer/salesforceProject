@@ -40,11 +40,20 @@ function calcularNumeros(operacion){
 		//str += aux;
 		str = "(" + str + aux;
        	}
-        str = str.substring(0, str.length-1);
-	str +=")";
+	//str = str.substring(0, str.length-1);
+	str +="0)";
         console.log(str);
         var x = eval(str);
 	document.getElementById("operacionTexto").innerHTML ="("+ str+")";
         return x;
 }
 
+var Persona = function (nombre, apellido, edad){
+	this.nombre = nombre;
+	this.apellido = apellido;
+	this.edad = edad;
+}
+
+Persona.prototype.calcularEdad = function(){
+	console.log("Mi edad es " + this["edad"]);
+}
