@@ -2,8 +2,27 @@
 <html>
 	<head>
 		<title>Clase 8</title>
-		<script type="text/javascript"></script>
 	</head>
-	<body></body>
+	<body>
+		<p id="miParrafo"></p>
+		<p id="miParrafo2">Pruebas</p>
+		<input type="text" id="numero" />
+		<button onclick="agregarNumeros()">Agregar</button>
+		<ul id="listaNumeros">
+		</ul>
+		<button onclick="limpiar()">Limpiar</button>
+		<select id="operacion">
+			<option value="">seleccione</option>
+			<option value="+">Suma</option>
+			<option value="-">Resta</option>
+			<option value="*">Multiplicaci&oacute;n</option>
+			<option value="/">Divisi&oacute;n</option>
+		</select>
+		<p id="operacionTexto"></p>
+		<button onclick="getOperacion()">Calcular</button>
+		<p id="resultado"></p>		 
+			<script type="text/javascript" src="scripts/operaciones.js">
+                </script>
 
+	</body>
 </html>
