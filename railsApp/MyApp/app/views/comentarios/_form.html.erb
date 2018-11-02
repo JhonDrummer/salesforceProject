@@ -1,0 +1,15 @@
+<%= form_with(model: [@articulo, @articulo.comentarios.build], local:true) do |form| %>
+  <p>
+    <%= form.label :nombre %>
+    <%= form.text_field :nombre %>
+  </p>
+
+  <p>
+    <%= form.label :cuerpo %>
+    <%= form.text_field :cuerpo %>
+  </p>
+
+  <p>
+    <%= form.submit 'Agregar' %>
+  </p>
+<% end %>

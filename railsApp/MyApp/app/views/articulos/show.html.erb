@@ -2,3 +2,9 @@
   <%= @articulo.title %>
   <%= @articulo.text %>
 </p>
+
+<h2>Comentarios</h2>
+  <%= render @articulo.comentarios %>
+
+<h2>Agregar comentario:</h2>
+<%= render 'comentarios/form' %>
